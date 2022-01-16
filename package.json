@@ -4,7 +4,8 @@
   "description": "messenger project",
   "scripts": {
     "start": "parcel index.html --open --port 3000",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "netlify": "parcel index.html"
   },
   "author": "",
   "license": "ISC",
