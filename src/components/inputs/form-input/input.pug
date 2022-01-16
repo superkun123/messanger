@@ -1,0 +1,4 @@
+mixin input(typeName,className, name)
+  .form-input__container 
+    label(for="").form-input__label= name 
+        input.form-input(type=typeName, class= "btn-link " + className)

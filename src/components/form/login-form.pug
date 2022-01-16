@@ -1,0 +1,11 @@
+form(action='', method='POST').form-container
+  .form-inputs 
+    h2.form-title Вход
+    include ../../components/buttons/btn-link
+    include ../../components/buttons/btn-primary
+    include ../../components/inputs/form-input/input
+    +input('text', 'login', 'Логин')
+    +input('text', 'password', 'Пароль')
+  .form-buttons
+    +btn-primary('submit', 'form-submit-btn', 'Вход')
+    +btn-link('button', '', 'Ещё не зарегистрированы?')

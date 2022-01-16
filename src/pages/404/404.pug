@@ -1,0 +1,12 @@
+extends ../../layout/main/header.pug
+
+
+
+block content
+  .page-error
+    .error-code 404
+    .error-description Не туда попали
+    include ../../components/buttons/btn-link
+    +btn-link('button', '', 'Назад к чатам')
+    
+    

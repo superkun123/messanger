@@ -1,0 +1,29 @@
+.profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.profile-avatar__input {
+    font-size: 0;
+    width: 130px;
+    height: 130px;
+    background-color: #EFEFEF;
+    display: block;
+    border-radius: 100%;
+    background-image: url('../static/images/avatar-upload.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.profile-avatar__name {
+    font-size: 16px;
+    color: $black;
+    margin-top: 15px;
+}

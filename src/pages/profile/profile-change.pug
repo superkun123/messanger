@@ -1,0 +1,22 @@
+extends ../../layout/main/header.pug
+
+block content
+    .profile-page
+      .profile-aside
+        button(type="button").profile-aside__back 
+          
+      .profile-content
+        .profile-content__container
+          include ../../components/profile-avatar/profile-avatar
+          +profile-avatar('')
+          include ../../components/inputs/profile-input/profile-input
+          .profile-content__profile-data
+            form(action="").profile-content__form
+              +profile-input('Почта', 'text', 'email', 'pochta@yandex.ru')
+              +profile-input('Логин', 'text', 'login', 'ivanivanov')
+              +profile-input('Имя', 'text', 'first_name', 'Иван')
+              +profile-input('Фамилия', 'text', 'second_name', 'Иванов')
+              +profile-input('Имя в чате', 'text', 'display_name', 'Иван')
+              +profile-input('Телефон', 'text', 'phone', '+7 (909) 967 30 30')
+              include ../../components/buttons/btn-primary
+              +btn-primary('submit', 'profile-submit', 'Сохранить')

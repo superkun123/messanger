@@ -1,0 +1,22 @@
+.search-input__container {
+    width: 100%;
+}
+
+.search-input  {
+    background: #EFEFEF;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background-image: url('../static/images/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 36%;
+    &:active, &:focus, &:active {
+        border: none;
+        outline: none;
+        background-image: none;
+    }
+}

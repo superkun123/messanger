@@ -1,0 +1,33 @@
+extends ../../layout/main/header.pug
+
+block content
+  .chat-page
+    .chat-aside 
+      .chat-aside__header
+        .back-btn Профиль
+        include ../../components/inputs/chat-input/search-input
+        +search-input('text', '', 'Поиск')
+      .chat-aside__messages
+        include ../../components/messages/message-aside/message-aside
+        +message-aside('Андрей', '10:37', '5', 'Привет')
+        +message-aside('Киноклуб', '12:00', '6', 'Друзья, у меня для вас особенный выпуск новостей!...')
+        +message-aside('Вадим', '10:37', '2', 'Вы: Круто!')
+        +message-aside('тет-а-теты', '1 Мая 2020', '4', 'И Human Interface Guidelines и Material Design рекомендуют...')
+        +message-aside('Design Destroyer', '3 Мая 2020', '1', 'В 2008 году художник Jon Rafman  начал собирать...')
+        +message-aside('Андрей', '10:37', '5', 'Привет')
+        +message-aside('Киноклуб', '12:00', '6', 'Друзья, у меня для вас особенный выпуск новостей!...')
+        +message-aside('Вадим', '10:37', '2', 'Вы: Круто!')
+        +message-aside('тет-а-теты', '1 Мая 2020', '4', 'И Human Interface Guidelines и Material Design рекомендуют...')
+        +message-aside('Design Destroyer', '3 Мая 2020', '1', 'В 2008 году художник Jon Rafman  начал собирать...')
+        +message-aside('Вадим', '10:37', '2', 'Вы: Круто!')
+        +message-aside('тет-а-теты', '1 Мая 2020', '4', 'И Human Interface Guidelines и Material Design рекомендуют...')
+        +message-aside('Design Destroyer', '3 Мая 2020', '1', 'В 2008 году художник Jon Rafman  начал собирать...')
+    .chat-content
+      .chat-content__header
+        .chat-content__avatar
+          .chat-content__avatar-content 
+          .chat-content__name 
+      .chat-content__messages Выберите чат чтобы отправить сообщение
+        .history-date 
+
+      .chat-content__send

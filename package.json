@@ -1,0 +1,20 @@
+{
+  "name": "messanger",
+  "version": "1.0.0",
+  "description": "messenger project",
+  "scripts": {
+    "start": "parcel index.pug --open --port 3000",
+    "build": "parcel build index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.1.1",
+    "@parcel/transformer-sass": "^2.1.1",
+    "node-sass": "^7.0.1",
+    "parcel": "^2.1.1"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

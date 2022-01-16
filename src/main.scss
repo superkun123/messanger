@@ -1,0 +1,16 @@
+@import '../src/_vars';
+@import '../src/_base.scss';
+
+@import '../src/components/buttons/_btn-link.scss';
+@import '../src/components/buttons/_btn-primary.scss';
+@import '../src/components/inputs/form-input/input';
+@import '../src/components/messages/message-aside/message-aside.scss';
+@import '../src/components/form/form';
+@import '../src/components/inputs/chat-input/search-input';
+@import '../src/components/inputs/profile-input/profile-input';
+@import '../src/components/profile-avatar/profile-avatar';
+
+@import '../src/pages/404/_404.scss';
+@import '../src/pages/login/login';
+@import '../src/pages/chat/chat.scss';
+@import '../src/pages/profile/profile';

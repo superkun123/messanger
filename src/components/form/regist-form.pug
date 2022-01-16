@@ -1,0 +1,16 @@
+form(action='', method='POST').form-container
+  .form-inputs 
+    h2.form-title Регистрация
+    include ../../components/buttons/btn-link
+    include ../../components/buttons/btn-primary
+    include ../../components/inputs/form-input/input
+    +input('text', 'email', 'Почта')
+    +input('text', 'login', 'Логин')
+    +input('text', 'first_name', 'Имя')
+    +input('text', 'second_name', 'Фамилия')
+    +input('text', 'phone', 'Телефон')
+    +input('text', 'password', 'Пароль')
+    +input('text', 'password', 'Пароль (ещё раз)')
+  .form-buttons
+    +btn-primary('submit', 'form-submit-btn', 'Зарегистрироваться')
+    +btn-link('button', '', 'Войти')

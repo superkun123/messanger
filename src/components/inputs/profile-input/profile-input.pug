@@ -1,0 +1,4 @@
+mixin profile-input(labelName, typeName, className, name)
+  .profile-input-container 
+    label(for="").profile-label= labelName 
+      input(type=typeName, class= "profile-input " + className, placeholder=name)

@@ -1,0 +1,12 @@
+extends ../../layout/main/header.pug
+
+
+
+block content
+  .page-error
+    .page-error__content
+      .error-code 500
+      .error-description Мы уже фиксим
+      include ../../components/buttons/btn-link
+      +btn-link('button', '', 'Назад к чатам')
+    

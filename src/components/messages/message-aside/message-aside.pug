@@ -1,0 +1,10 @@
+mixin message-aside(name,date,count, lastMessage)
+  .message-aside
+    .message-aside__avatar
+    .message-aside__content
+      .message-aside__text 
+       .message-aside__name= name
+       .message-aside__last-message= lastMessage 
+      .message-aside__info 
+        .message-aside__time= date
+        .message-aside__unreaded-count= count

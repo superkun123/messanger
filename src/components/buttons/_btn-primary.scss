@@ -1,0 +1,14 @@
+.btn-primary {
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    background-color: $blue;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
+    &:hover {
+        cursor: pointer;
+    }
+}

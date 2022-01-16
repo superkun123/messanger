@@ -1,0 +1,17 @@
+.profile-input {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.profile-label {
+    font-size: 13px;
+    color: $black;
+}
+
+.profile-value {
+    color: #999999;
+    font-size: 13px;
+}

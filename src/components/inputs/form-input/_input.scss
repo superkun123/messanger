@@ -1,0 +1,28 @@
+.form-input__container  {
+    margin-bottom: 16px;
+}
+
+.form-input__label {
+    color: #999999;
+    font-size: 9px;
+    padding-bottom: 9px;
+}
+
+.form-input {
+    border: none;
+    border-bottom: 1px solid #3369F3;
+    padding: 7px 0px;
+    font-size: 13px;
+    color: #1E1E1E;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    &:focus-visible {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+    display: block;
+}

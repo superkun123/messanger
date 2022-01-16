@@ -1,0 +1,49 @@
+extends ../../layout/main/header.pug
+
+block content
+    .profile-page
+      .profile-aside
+        button(type="button").profile-aside__back 
+          
+      .profile-content
+        .profile-content__container
+          include ../../components/profile-avatar/profile-avatar
+          +profile-avatar('Иван')
+          include ../../components/inputs/profile-input/profile-input
+          .profile-content__profile-data
+            .profile-input.email 
+                .profile-label Почта
+                .profile-value pochta@yandex.ru
+            .profile-input.login 
+                .profile-label Логин
+                .profile-value ivanivanov  
+            .profile-input.first_name 
+                .profile-label Имя
+                .profile-value Иван 
+            .profile-input.second_name
+                .profile-label Фамилия
+                .profile-value Иванов
+            .profile-input.display_name
+                .profile-label Имя в чате
+                .profile-value Иван
+            .profile-input.phone
+                .profile-label Телефон
+                .profile-value +7 (909) 967 30 30
+            .profile-content__buttons
+                include ../../components/buttons/btn-link
+                .profile-content-buttons__button-container
+                  +btn-link('#', '', 'Изменить данные')
+                .profile-content-buttons__button-container
+                  +btn-link('#', '', 'Изменить пароль')
+                .profile-content-buttons__button-container
+                  +btn-link('#', 'exit-link', 'Выйти')
+
+        
+    //-   +profile-input('Почта', 'text', 'email', 'pochta@yandex.ru')
+    //-   +profile-input('Логин', 'text', 'login', 'ivanivanov')
+    //-   +profile-input('Имя', 'text', 'first_name', 'Иван')
+    //-   +profile-input('Фамилия', 'text', 'second_name', 'Иванов')
+    //-   +profile-input('Имя в чате', 'text', 'display_name', 'Иван')
+    //-   +profile-input('Телефон', 'text', 'phone', '+7 (909) 967 30 30')
+      
+      
